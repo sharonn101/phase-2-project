@@ -4,7 +4,6 @@ import { getProductsFn } from './services/api';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
-import ProductDetail from './components/pages/ProductDetail';
 import Admin from './components/pages/Admin';
 import './App.css';
 
@@ -30,7 +29,7 @@ function App() {
   };
 
   return (
-    <Router>
+    
       <div className="App">
         <Header />
         <Routes>
@@ -39,7 +38,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    
   );
 }
 
