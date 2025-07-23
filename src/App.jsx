@@ -6,7 +6,6 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import ProductDetail from './components/pages/ProductDetail';
 import Admin from './components/pages/Admin';
-import NotFound from './components/pages/NotFound';
 import './App.css';
 
 function App() {
@@ -31,18 +30,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header />
-      <Router>
+    <Router>
+      <div className="App">
+        <Header />
         <Routes>
           <Route path="/" element={<Home products={products} onUpdateProduct={handleUpdateProduct} onDeleteProduct={handleDeleteProduct} />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
