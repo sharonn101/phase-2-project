@@ -10,9 +10,9 @@ function ProductList() {
   }, []);
 
   return (
-    <div style={{ padding: '2rem' }}>
+    <div>
       <h1>Product List</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+      <div>
         {products.map(product => (
           <Link
             to={`/products/${product.id}`}
@@ -23,10 +23,10 @@ function ProductList() {
             <img
               src={product.thumbnail}
               alt={product.title}
-              style={{ width: '100%', height: '150px', objectFit: 'cover', borderRadius: '4px' }}
+            
             />
-            <h3 style={{ marginTop: '0.5rem' }}>{product.title}</h3>
-            <p style={{ fontWeight: 'bold' }}>${product.price}</p>
+            <h3>{product.title}</h3>
+            <p>${product.price}</p>
           </Link>
         ))}
       </div>
