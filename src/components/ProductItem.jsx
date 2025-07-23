@@ -1,5 +1,5 @@
 import React from 'react';
-import { updateProductFn, deleteProductFn } from '../../services/api';
+import { updateProductFn, deleteProductFn } from '../services/api';
 
 function ProductItem({ product, onUpdateProduct, onDeleteProduct }) {
   const handleQuantityChange = (amount) => {
