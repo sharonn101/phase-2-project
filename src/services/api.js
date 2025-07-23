@@ -1,4 +1,3 @@
-const getProducts = getProductsFn
 function getProductsFn() {
     return (
       fetch("https://dummyjson.com/products")
@@ -8,7 +7,6 @@ function getProductsFn() {
     )
 }
 
-const addProducts = addProductsFn
 function addProductsFn(product) {
     return (
       fetch("https://dummyjson.com/products/add", {
@@ -23,7 +21,6 @@ function addProductsFn(product) {
     )
 }
 
-const updateProduct = updateProductFn
 function updateProductFn(id, product) {
     return (
       fetch(`https://dummyjson.com/products/${id}`, {
@@ -38,7 +35,6 @@ function updateProductFn(id, product) {
     )
 }
 
-const deleteProduct = deleteProductFn
 function deleteProductFn(id) {
     return (
       fetch(`https://dummyjson.com/products/${id}`, {
@@ -48,3 +44,4 @@ function deleteProductFn(id) {
       .catch(err => console.error("Error deleting product:", err))
     )
 }
+
