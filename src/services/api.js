@@ -45,3 +45,4 @@ function deleteProductFn(id) {
     )
 }
 
+export { getProductsFn, addProductsFn, updateProductFn, deleteProductFn }
