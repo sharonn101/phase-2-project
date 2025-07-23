@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { addProductsFn } from '../../services/api';
+import { addProductsFn } from '../services/api';
 
 function ProductForm() {
   const [product, setProduct] = useState({
