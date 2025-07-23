@@ -13,14 +13,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      
       <Header />
+     
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/admin" element={<Admin />} />
-        {/* <Route path="/dashboard" element={<Dashboard products={testProducts} />} /> */}
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
