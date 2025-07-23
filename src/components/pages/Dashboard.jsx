@@ -20,14 +20,17 @@ function Dashboard() {
       });
   }, []);
 
+  // Filter products that are below or equal to the low stock threshold
   const lowStockProducts = products.filter(product => product.stock <= LOW_STOCK_THRESHOLD);
-
+   
+  // Show a loading message while data is being fetched
   if (loading) return <p>Loading inventory...</p>;
 
   return (
     <div className="dashboard">
       <h2>📦 Inventory Dashboard</h2>
 
+      {/* Display low-stock warnings or a message saying all products are fine */}
       {lowStockProducts.length > 0 ? (
         <div className="alerts">
           {lowStockProducts.map(product => (
