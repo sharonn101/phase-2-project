@@ -34,6 +34,8 @@ function Home() {
           <div key={product.id}>
             <h3>{product.title}</h3>
             <p>${product.price} | {product.category}</p>
+            <img src={product.thumbnail} alt={product.title} style={{ width: "100px" }} />
+            <p>{product.description}</p>
           </div>
         ))}
       </div>
