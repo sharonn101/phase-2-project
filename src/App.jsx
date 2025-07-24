@@ -11,9 +11,6 @@ function App() {
     <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="*" element={<NotFound />} /> */}
         </Routes>
       {/* <Footer /> */}
     </div>
