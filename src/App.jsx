@@ -6,6 +6,9 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import Admin from './components/pages/Admin';
 import './App.css';
+import ProductList from './components/ProductList';
+import ProductDetail from './components/pages/ProductDetail';
+
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -29,16 +32,16 @@ function App() {
   };
 
   return (
-    
       <div className="App">
         <Header />
         <Routes>
           <Route path="/" element={<Home products={products} onUpdateProduct={handleUpdateProduct} onDeleteProduct={handleDeleteProduct} />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/" element={<ProductList />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
         </Routes>
         <Footer />
       </div>
-    
   );
 }
 
