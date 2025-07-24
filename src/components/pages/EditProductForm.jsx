@@ -1,4 +1,6 @@
+
 import React, { useState } from "react";
+import "./EditProductForm.css";
 
 function EditForm({ product, onEdit }) {
   const [formData, setFormData] = useState({
@@ -23,31 +25,28 @@ function EditForm({ product, onEdit }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="handleSubmit-form">
-      <label className="block">
+    <form onSubmit={handleSubmit} className="edit-form">
+      <label className="form-label">
         Price:
         <input
           type="number"
           name="price"
           value={formData.price}
           onChange={handleChange}
-          className="price-input"
+          className="form-input"
         />
       </label>
-      <label className="block">
+      <label className="form-label">
         Stock:
         <input
           type="number"
           name="stock"
           value={formData.stock}
           onChange={handleChange}
-          className="stock-input"
+          className="form-input"
         />
       </label>
-      <button
-        type="submit"
-        className="submitButton"
-      >
+      <button type="submit" className="submit-button">
         Save
       </button>
     </form>

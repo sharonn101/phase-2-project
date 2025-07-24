@@ -1,9 +1,11 @@
-import React from 'react';
+ 
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer>
-      <p>&copy;  Inventory Management</p>
+    <footer className="footer">
+      <p>&copy; {new Date().getFullYear()} Inventory Dashboard. All rights reserved.</p>
     </footer>
   );
 }
