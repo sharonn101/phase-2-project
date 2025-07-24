@@ -59,12 +59,18 @@ function ProductList({ products, onUpdateProduct, onDeleteProduct }) {
         </button>
       )}
 
-      {!hasMore && <p>No more products to load</p>}
-       <div className="product-list">
-      {products.map(product => (
-        <ProductItem key={product.id} product={product} onUpdateProduct={onUpdateProduct} onDeleteProduct={onDeleteProduct} />
+    {!hasMore && <p>No more products to load</p>}
+    <div className="product-items">
+      {visibleProducts.map(product => (
+        <ProductItem
+          key={product.id}
+          product={product}
+          onUpdateProduct={onUpdateProduct}
+          onDeleteProduct={onDeleteProduct}
+        />
       ))}
     </div>
+  </div>
   );
 }
 
