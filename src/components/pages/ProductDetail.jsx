@@ -1,27 +1,78 @@
-import { useParams } from 'react-router-dom';
-import { getProductsFn } from "/src/services/api";
-import {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import EditForm from "./EditProductForm";
 
 function ProductDetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [product, setProduct] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
-    getProductsFn().then(products => {
-      const single = products.find(product => product.id === Number(id));
-      setProduct(single);
-    });
+    fetch(`https://dummyjson.com/products/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setProduct(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching product:", error);
+        setLoading(false);
+      });
   }, [id]);
 
-  if (!product) return <p>Loading...</p>;
+  function handleEditClick() {
+    setIsEditing(true);
+  }
+
+  function handleEditSubmit(updatedData) {
+
+    setProduct((prev) => ({
+      ...prev,
+      ...updatedData,
+    }));
+    setIsEditing(false);
+  }
+
+  function handleDelete() {
+    const confirm = window.confirm("Are you sure you want to delete this product?");
+    if (confirm) {
+      alert("Simulated delete. Navigating back to product list.");
+      navigate("/products");
+    }
+  }
+
+  if (loading) return <p>Loading...</p>;
+  if (!product) return <p>Product not found.</p>;
 
   return (
-    <div className="product-detail">
-      <h2>{product.title}</h2>
-      <img src={product.thumbnail} alt={product.title} style={{ width: '300px' }} />
-      <p><strong>Price:</strong> ${product.price}</p>
+    <div className="product-container">
+      <h2 className="product-title">{product.title}</h2>
+      <img src={product.thumbnail} alt={product.title} className="image-container" />
       <p><strong>Description:</strong> {product.description}</p>
-      <p><strong>Category:</strong> {product.category}</p>
+      <p><strong>Price:</strong> ${product.price}</p>
+      <p><strong>Stock:</strong> {product.stock}</p>
+
+      {!isEditing ? (
+        <div className="edit-container">
+          <button
+            onClick={handleEditClick}
+            className="handleEditClickButton"
+          >
+            Edit
+          </button>
+          <button
+            onClick={handleDelete}
+            className="handleDeleteButton"
+          >
+            Delete
+          </button>
+        </div>
+      ) : (
+        <EditForm product={product} onEdit={handleEditSubmit} />
+      )}
     </div>
   );
 }
