@@ -3,7 +3,7 @@ import ProductList from '../ProductList';
 import { useEffect, useState } from "react";
 import { getProductsFn } from "../../services/api";
 
-function Home({ products, onUpdateProduct, onDeleteProduct }) {
+function Home() {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("all");
@@ -18,6 +18,20 @@ function Home({ products, onUpdateProduct, onDeleteProduct }) {
     p.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
     (category === "all" || p.category === category)
   );
+
+  const handleUpdateProduct = (updatedProduct) => {
+    setProducts(prevProducts =>
+      prevProducts.map(product =>
+        product.id === updatedProduct.id ? updatedProduct : product
+      )
+    );
+  };
+
+  const handleDeleteProduct = (deletedProductId) => {
+    setProducts(prevProducts =>
+      prevProducts.filter(product => product.id !== deletedProductId)
+    );
+  };
 
   return (
     <div>
@@ -41,7 +55,7 @@ function Home({ products, onUpdateProduct, onDeleteProduct }) {
           </div>
         ))}
       </div>
-     <ProductList products={products} onUpdateProduct={onUpdateProduct} onDeleteProduct={onDeleteProduct} />
+     <ProductList products={products} onUpdateProduct={handleUpdateProduct} onDeleteProduct={handleDeleteProduct} />
    </div>
   );
 }
