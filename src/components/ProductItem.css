@@ -1,0 +1,58 @@
+.product-item {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.product-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.product-item p {
+  margin: 4px 0;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn.increase {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn.increase:hover {
+  background-color: #45a049;
+}
+
+.btn.decrease {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.btn.decrease:hover {
+  background-color: #ec971f;
+}
+
+.btn.delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn.delete:hover {
+  background-color: #c9302c;
+}
