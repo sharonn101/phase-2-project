@@ -1,0 +1,38 @@
+.product-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-list-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.load-more-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #0a74da;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.load-more-btn:hover {
+  background-color: #005bb5;
+}
