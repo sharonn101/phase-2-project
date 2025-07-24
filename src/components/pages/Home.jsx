@@ -1,7 +1,9 @@
+import React from 'react';
+import ProductList from '../ProductList';
 import { useEffect, useState } from "react";
 import { getProductsFn } from "../../services/api";
 
-function Home() {
+function Home({ products, onUpdateProduct, onDeleteProduct }) {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("all");
@@ -39,7 +41,8 @@ function Home() {
           </div>
         ))}
       </div>
-    </div>
+     <ProductList products={products} onUpdateProduct={onUpdateProduct} onDeleteProduct={onDeleteProduct} />
+   </div>
   );
 }
 

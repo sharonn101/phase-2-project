@@ -1,7 +1,9 @@
+import React from 'react';
+import ProductItem from './ProductItem';
 import { useState, useEffect } from "react";
 import { getProductsFn } from "../services/api";
 
-function ProductList() {
+function ProductList({ products, onUpdateProduct, onDeleteProduct }) {
   const [products, setProducts] = useState([]);
   const [visibleProducts, setVisibleProducts] = useState([]);
   const [page, setPage] = useState(1);
@@ -58,6 +60,10 @@ function ProductList() {
       )}
 
       {!hasMore && <p>No more products to load</p>}
+       <div className="product-list">
+      {products.map(product => (
+        <ProductItem key={product.id} product={product} onUpdateProduct={onUpdateProduct} onDeleteProduct={onDeleteProduct} />
+      ))}
     </div>
   );
 }
