@@ -1,0 +1,304 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Essence Mascara Lash Princess",
+      "description": "Volumizing and lengthening mascara with long-lasting, cruelty-free formula",
+      "price": 9.99,
+      "category": "beauty",
+      "rating": 2.56,
+      "stock": 99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
+    },
+    {
+      "id": 2,
+      "title": "Eyeshadow Palette with Mirror",
+      "description": "Versatile range of eyeshadow shades with built-in mirror",
+      "price": 19.99,
+      "category": "beauty",
+      "rating": 2.86,
+      "stock": 34,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp"
+    },
+    {
+      "id": 3,
+      "title": "Powder Canister",
+      "description": "Finely milled setting powder for smooth, matte finish",
+      "price": 14.99,
+      "category": "beauty",
+      "rating": 4.64,
+      "stock": 89,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp"
+    },
+    {
+      "id": 4,
+      "title": "Red Lipstick",
+      "description": "Creamy, pigmented red lipstick with long-lasting finish",
+      "price": 12.99,
+      "category": "beauty",
+      "rating": 4.36,
+      "stock": 91,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"
+    },
+    {
+      "id": 5,
+      "title": "Red Nail Polish",
+      "description": "Rich glossy red polish with quick-drying formula",
+      "price": 8.99,
+      "category": "beauty",
+      "rating": 4.32,
+      "stock": 79,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp"
+    },
+    {
+      "id": 6,
+      "title": "Calvin Klein CK One",
+      "description": "Classic unisex fragrance with fresh, clean scent",
+      "price": 49.99,
+      "category": "fragrances",
+      "rating": 4.37,
+      "stock": 29,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp"
+    },
+    {
+      "id": 7,
+      "title": "Chanel Coco Noir Eau De",
+      "description": "Elegant fragrance with notes of grapefruit, rose and sandalwood",
+      "price": 129.99,
+      "category": "fragrances",
+      "rating": 4.26,
+      "stock": 58,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp"
+    },
+    {
+      "id": 8,
+      "title": "Dior J'adore",
+      "description": "Luxurious floral fragrance with ylang-ylang, rose and jasmine",
+      "price": 89.99,
+      "category": "fragrances",
+      "rating": 3.8,
+      "stock": 98,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp"
+    },
+    {
+      "id": 9,
+      "title": "Dolce Shine Eau de",
+      "description": "Vibrant fruity fragrance with mango, jasmine and blonde woods",
+      "price": 69.99,
+      "category": "fragrances",
+      "rating": 3.96,
+      "stock": 4,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"
+    },
+    {
+      "id": 10,
+      "title": "Gucci Bloom Eau de",
+      "description": "Floral fragrance with tuberose, jasmine and Rangoon creeper",
+      "price": 79.99,
+      "category": "fragrances",
+      "rating": 2.74,
+      "stock": 91,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp"
+    },
+    {
+      "id": 11,
+      "title": "Annibale Colombo Bed",
+      "description": "Luxurious bed frame crafted with high-quality materials",
+      "price": 1899.99,
+      "category": "furniture",
+      "rating": 4.77,
+      "stock": 88,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp"
+    },
+    {
+      "id": 12,
+      "title": "Annibale Colombo Sofa",
+      "description": "Sophisticated sofa with premium upholstery",
+      "price": 2499.99,
+      "category": "furniture",
+      "rating": 3.92,
+      "stock": 60,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp"
+    },
+    {
+      "id": 13,
+      "title": "Bedside Table African Cherry",
+      "description": "Stylish bedside table with convenient storage",
+      "price": 299.99,
+      "category": "furniture",
+      "rating": 2.87,
+      "stock": 64,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp"
+    },
+    {
+      "id": 14,
+      "title": "Knoll Saarinen Executive Conference Chair",
+      "description": "Modern ergonomic chair for office or conference room",
+      "price": 499.99,
+      "category": "furniture",
+      "rating": 4.88,
+      "stock": 26,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"
+    },
+    {
+      "id": 15,
+      "title": "Wooden Bathroom Sink With Mirror",
+      "description": "Unique wooden sink countertop with matching mirror",
+      "price": 799.99,
+      "category": "furniture",
+      "rating": 3.59,
+      "stock": 7,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/furniture/wooden-bathroom-sink-with-mirror/thumbnail.webp"
+    },
+    {
+      "id": 16,
+      "title": "Apple",
+      "description": "Fresh crisp apples perfect for snacking",
+      "price": 1.99,
+      "category": "groceries",
+      "rating": 4.19,
+      "stock": 8,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/apple/thumbnail.webp"
+    },
+    {
+      "id": 17,
+      "title": "Beef Steak",
+      "description": "High-quality beef great for grilling",
+      "price": 12.99,
+      "category": "groceries",
+      "rating": 4.47,
+      "stock": 86,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/beef-steak/thumbnail.webp"
+    },
+    {
+      "id": 18,
+      "title": "Cat Food",
+      "description": "Nutritious food formulated for feline dietary needs",
+      "price": 8.99,
+      "category": "groceries",
+      "rating": 3.13,
+      "stock": 46,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cat-food/thumbnail.webp"
+    },
+    {
+      "id": 19,
+      "title": "Chicken Meat",
+      "description": "Fresh tender chicken for various culinary uses",
+      "price": 9.99,
+      "category": "groceries",
+      "rating": 3.19,
+      "stock": 97,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/thumbnail.webp"
+    },
+    {
+      "id": 20,
+      "title": "Cooking Oil",
+      "description": "Versatile oil for frying and sautéing",
+      "price": 4.99,
+      "category": "groceries",
+      "rating": 4.8,
+      "stock": 10,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp"
+    },
+    {
+      "id": 21,
+      "title": "Cucumber",
+      "description": "Crisp hydrating cucumbers ideal for salads",
+      "price": 1.49,
+      "category": "groceries",
+      "rating": 4.07,
+      "stock": 84,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/cucumber/thumbnail.webp"
+    },
+    {
+      "id": 22,
+      "title": "Dog Food",
+      "description": "Specially formulated food for canine nutrition",
+      "price": 10.99,
+      "category": "groceries",
+      "rating": 4.55,
+      "stock": 71,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/dog-food/thumbnail.webp"
+    },
+    {
+      "id": 23,
+      "title": "Eggs",
+      "description": "Fresh eggs for baking, cooking or breakfast",
+      "price": 2.99,
+      "category": "groceries",
+      "rating": 2.53,
+      "stock": 9,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/eggs/thumbnail.webp"
+    },
+    {
+      "id": 24,
+      "title": "Fish Steak",
+      "description": "Quality fish steak for grilling or baking",
+      "price": 14.99,
+      "category": "groceries",
+      "rating": 3.78,
+      "stock": 74,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/fish-steak/thumbnail.webp"
+    },
+    {
+      "id": 25,
+      "title": "Green Bell Pepper",
+      "description": "Fresh vibrant pepper for adding flavor to dishes",
+      "price": 1.29,
+      "category": "groceries",
+      "rating": 3.25,
+      "stock": 33,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp"
+    },
+    {
+      "id": 26,
+      "title": "Green Chili Pepper",
+      "description": "Spicy chili pepper for adding heat to recipes",
+      "price": 0.99,
+      "category": "groceries",
+      "rating": 3.66,
+      "stock": 3,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/green-chili-pepper/thumbnail.webp"
+    },
+    {
+      "id": 27,
+      "title": "Honey Jar",
+      "description": "Pure natural honey in convenient jar",
+      "price": 6.99,
+      "category": "groceries",
+      "rating": 3.97,
+      "stock": 34,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/thumbnail.webp"
+    },
+    {
+      "id": 28,
+      "title": "Ice Cream",
+      "description": "Creamy delicious ice cream in various flavors",
+      "price": 5.49,
+      "category": "groceries",
+      "rating": 3.39,
+      "stock": 27,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp"
+    },
+    {
+      "id": 29,
+      "title": "Juice",
+      "description": "Refreshing fruit juice packed with vitamins",
+      "price": 3.99,
+      "category": "groceries",
+      "rating": 3.94,
+      "stock": 50,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/juice/thumbnail.webp"
+    },
+    {
+      "id": 30,
+      "title": "Kiwi",
+      "description": "Nutrient-rich kiwi for snacking or dishes",
+      "price": 2.49,
+      "category": "groceries",
+      "rating": 4.93,
+      "stock": 99,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp"
+    }
+  ]
+}

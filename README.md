@@ -1,12 +1,34 @@
-# React + Vite
+# Business Inventory Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+A web-based inventory management system that helps businesses track products, manage stock levels, and organize product information efficiently.
 
-Currently, two official plugins are available:
+## Features
+- **Product Catalog**: View all products with details
+- **Search & Filter**: Find products by name or category
+- **Inventory Management**: Add, update, and delete products
+- **Real-time Updates**: Changes reflect immediately
+- **Responsive Design**: Works on desktop and mobile
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: React.js
+- **Styling**: CSS
+- **API**: Local JSON server
+- **State Management**: React Hooks (useState, useEffect)
 
-## Expanding the ESLint configuration
+## Usage
+1. **View Products**:
+   - All products are displayed on the main page
+   - Use the search box to find specific products
+   - Filter by category using the dropdown
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Manage Inventory**:
+   - **Add Product**: Submit new product details
+   - **Update Product**: Click the edit button on any product
+   - **Delete Product**: Click the delete button on any product
+
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+**Happy Inventory Managing!** 🎉

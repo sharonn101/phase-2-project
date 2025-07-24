@@ -1,5 +1,5 @@
  import React, { useEffect, useState } from 'react';
-import './Dashboard.css'; 
+import './Dashboard.css';
 
 function Dashboard() {
   const [products, setProducts] = useState([]);
@@ -7,10 +7,10 @@ function Dashboard() {
   const LOW_STOCK_THRESHOLD = 3;
 
   useEffect(() => {
-    fetch('https://dummyjson.com/products') 
+    fetch('https://dummyjson.com/products')
       .then((res) => res.json())
       .then((data) => {
-        setProducts(data.products); 
+        setProducts(data.products);
         setLoading(false);
       })
       .catch((error) => {

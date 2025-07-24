@@ -8,7 +8,7 @@ import Admin from './components/pages/Admin';
 import './App.css';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/pages/ProductDetail';
-
+import Dashboard from './components/pages/Dashboard';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -39,6 +39,7 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/" element={<ProductList />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
       </div>

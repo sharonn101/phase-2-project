@@ -1,11 +1,11 @@
  import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.css"; 
+import "./Header.css";
 
 function Header() {
   return (
     <header className="header">
-      <h1 className="logo">📦 Inventory Dashboard</h1>
+      <h1 className="logo">🛒🛍️ Business Inventory Manager</h1>
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/dashboard">Dashboard</Link>

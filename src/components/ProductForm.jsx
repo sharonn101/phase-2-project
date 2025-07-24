@@ -1,6 +1,6 @@
  import React, { useState } from 'react';
 import { addProductsFn } from '../services/api';
-import './ProductForm.css'; 
+import './ProductForm.css';
 
 function ProductForm() {
   const [product, setProduct] = useState({
@@ -69,8 +69,8 @@ function ProductForm() {
         </div>
 
         <div className="form-group">
-          <label>SKU:</label>
-          <input type="text" name="sku" value={product.sku} onChange={handleChange} />
+          <label>Image:</label>
+          <input type="url" name="thumbnail" value={product.thumbnail} onChange={handleChange} />
         </div>
 
         <button type="submit" className="submit-btn">Add Product</button>
