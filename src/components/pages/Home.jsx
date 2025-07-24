@@ -1,8 +1,7 @@
- import React from 'react';
+import React, { useEffect, useState } from "react";
 import ProductList from '../ProductList';
-import { useEffect, useState } from "react";
 import { getProductsFn } from "../../services/api";
- import './Home.css';
+import './Home.css';
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -20,52 +19,54 @@ function Home() {
     (category === "all" || p.category === category)
   );
 
-  // ✅ Define the missing functions
-  const onUpdateProduct = (updatedProduct) => {
-    setProducts(products.map(p => p.id === updatedProduct.id ? updatedProduct : p));
+  const handleUpdateProduct = (updatedProduct) => {
+    setProducts(prevProducts =>
+      prevProducts.map(product =>
+        product.id === updatedProduct.id ? updatedProduct : product
+      )
+    );
   };
 
-  const onDeleteProduct = (idToDelete) => {
-    setProducts(products.filter(p => p.id !== idToDelete));
+  const handleDeleteProduct = (deletedProductId) => {
+    setProducts(prevProducts =>
+      prevProducts.filter(product => product.id !== deletedProductId)
+    );
   };
 
   return (
-  
-  <div className="home-container">
-    <h1 className="home-header">Products</h1>
+    <div className="home-container">
+      <h1 className="home-header">Products</h1>
 
-    <div className="filters">
-      <input
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Search..."
+      <div className="filters">
+        <input
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search..."
+        />
+
+        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+          {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
+        </select>
+      </div>
+
+      <div className="products-list">
+        {filteredProducts.map(product => (
+          <div className="product-card" key={product.id}>
+            <img src={product.thumbnail} alt={product.title} />
+            <h3>{product.title}</h3>
+            <p>${product.price} | {product.category}</p>
+            <p>{product.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <ProductList
+        products={products}
+        onUpdateProduct={handleUpdateProduct}
+        onDeleteProduct={handleDeleteProduct}
       />
-
-      <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
-      </select>
     </div>
-
-    <div className="products-list">
-      {filteredProducts.map(product => (
-        <div className="product-card" key={product.id}>
-          <img src={product.thumbnail} alt={product.title} />
-          <h3>{product.title}</h3>
-          <p>${product.price} | {product.category}</p>
-          <p>{product.description}</p>
-        </div>
-      ))}
-    </div>
-
-    <ProductList
-      products={products}
-      onUpdateProduct={onUpdateProduct}
-      onDeleteProduct={onDeleteProduct}
-    />
-  </div>
-);
-
-  
+  );
 }
 
 export default Home;
