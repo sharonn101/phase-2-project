@@ -20,7 +20,6 @@ A web-based inventory management system that helps businesses track products, ma
    - Use the search box to find specific products
    - Filter by category using the dropdown
 
-<<<<<<< HEAD
 2. **Manage Inventory**:
    - **Add Product**: Submit new product details
    - **Update Product**: Click the edit button on any product
