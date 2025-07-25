@@ -86,6 +86,7 @@ function Home() {
           <h3>{product.title}</h3>
           <p>${product.price} | {product.category}</p>
           <p>{product.description}</p>
+          <p><strong>Stock:</strong> {product.stock}</p>
         </div>
       ))}
     </div>
