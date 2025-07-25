@@ -1,5 +1,3 @@
-# Business Inventory Manager App
-
 ## Overview
 A web-based inventory management system that helps businesses track products, manage stock levels, and organize product information efficiently.
 
@@ -22,6 +20,7 @@ A web-based inventory management system that helps businesses track products, ma
    - Use the search box to find specific products
    - Filter by category using the dropdown
 
+<<<<<<< HEAD
 2. **Manage Inventory**:
    - **Add Product**: Submit new product details
    - **Update Product**: Click the edit button on any product
@@ -32,3 +31,4 @@ A web-based inventory management system that helps businesses track products, ma
 Distributed under the MIT License. See `LICENSE` for more information.
 
 **Happy Inventory Managing!** 🎉
+
