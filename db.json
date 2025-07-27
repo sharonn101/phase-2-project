@@ -308,6 +308,15 @@
       "price": 2,
       "sku": "",
       "thumbnail": "https://cdn.mafrservices.com/sys-master-root/hec/h84/12453070340126/1565_Main.jpg"
+    },
+    {
+      "id": "59dd",
+      "title": "Green Apple",
+      "category": "groceries",
+      "stock": 15,
+      "price": 11,
+      "sku": "",
+      "thumbnail": "https://cdn.mafrservices.com/sys-master-root/hb8/had/12452864032798/1283_Main.jpg"
     }
   ]
 }

@@ -87,15 +87,23 @@ function Home() {
           <p>${product.price} | {product.category}</p>
           <p>{product.description}</p>
           <p><strong>Stock:</strong> {product.stock}</p>
+          <div className="product-actions">
+              <button onClick={() => onUpdateProduct(product.id, { title: "Updated Name" })}>
+                Update
+              </button>
+              <button onClick={() => onDeleteProduct(product.id)}>
+                Delete
+              </button>
+            </div>
         </div>
       ))}
     </div>
 
-    <ProductList
+    {/* <ProductList
       products={products}
       onUpdateProduct={onUpdateProduct}
       onDeleteProduct={onDeleteProduct}
-    />
+    /> */}
   </div>
 );
 
