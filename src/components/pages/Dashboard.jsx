@@ -1,17 +1,16 @@
-
 import React, { useEffect, useState } from 'react';
+import './Dashboard.css';
 
 function Dashboard() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
   const LOW_STOCK_THRESHOLD = 3;
 
   useEffect(() => {
-    fetch('https://dummyjson.com/products') 
+    fetch('https://dummyjson.com/products')
       .then((res) => res.json())
       .then((data) => {
-        setProducts(data.products); 
+        setProducts(data.products);
         setLoading(false);
       })
       .catch((error) => {
@@ -20,27 +19,24 @@ function Dashboard() {
       });
   }, []);
 
-  // Filter products that are below or equal to the low stock threshold
   const lowStockProducts = products.filter(product => product.stock <= LOW_STOCK_THRESHOLD);
-   
-  // Show a loading message while data is being fetched
-  if (loading) return <p>Loading inventory...</p>;
+
+  if (loading) return <p className="loading-text">Loading inventory...</p>;
 
   return (
     <div className="dashboard">
-      <h2>📦 Inventory Dashboard</h2>
+      <h2 className="dashboard-title">📦 Inventory Dashboard</h2>
 
-      {/* Display low-stock warnings or a message saying all products are fine */}
       {lowStockProducts.length > 0 ? (
         <div className="alerts">
           {lowStockProducts.map(product => (
-            <p key={product.id} style={{ color: "red", fontWeight: "bold" }}>
-              ⚠️ {product.title} is running low! Only {product.stock} left in stock.
+            <p key={product.id} className="alert-text">
+              ⚠️ <strong>{product.title}</strong> is running low! Only {product.stock} left in stock.
             </p>
           ))}
         </div>
       ) : (
-        <p style={{ color: "green" }}>✅ All products are well stocked!</p>
+        <p className="success-text">✅ All products are well stocked!</p>
       )}
     </div>
   );
