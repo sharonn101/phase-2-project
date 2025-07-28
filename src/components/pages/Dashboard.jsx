@@ -1,4 +1,4 @@
-// src/components/pages/Dashboard.jsx
+
 import React, { useEffect, useState } from 'react';
 
 function Dashboard() {
