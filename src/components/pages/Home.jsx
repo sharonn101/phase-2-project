@@ -1,8 +1,8 @@
- import React from 'react';
+import React from 'react';
 import ProductList from '../ProductList';
 import { useEffect, useState } from "react";
-import { getProductsFn } from "../../services/api";
- import './Home.css';
+import { getProductsFn, updateProductFn, addProductsFn, deleteProductFn } from "../../services/api";
+import './Home.css';
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -88,9 +88,10 @@ function Home() {
           <p>{product.description}</p>
           <p><strong>Stock:</strong> {product.stock}</p>
           <div className="product-actions">
-              <button onClick={() => onUpdateProduct(product.id, { title: "Updated Name" })}>
+              {/* <button onClick={() => handleUpdateProduct(product.id, { title: "Updated Name" })}>
                 Update
-              </button>
+              </button> */}
+
               <button onClick={() => onDeleteProduct(product.id)}>
                 Delete
               </button>
