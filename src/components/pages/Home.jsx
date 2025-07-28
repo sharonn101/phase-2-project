@@ -1,9 +1,8 @@
- import React from 'react';
+import React from 'react';
 import ProductList from '../ProductList';
 import { useEffect, useState } from "react";
 import { getProductsFn, updateProductFn, addProductsFn, deleteProductFn } from "../../services/api";
-
- import './Home.css';
+import './Home.css';
 
 function Home() {
   const [products, setProducts] = useState([]);

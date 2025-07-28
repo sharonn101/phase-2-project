@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import EditForm from "./EditProductForm";
 
+import './ProductDetail.css';
+
 function ProductDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -11,7 +13,7 @@ function ProductDetail() {
 
 
   useEffect(() => {
-    fetch(`https://dummyjson.com/products/${id}`)
+    fetch(`http://localhost:3000/products`)
       .then((res) => res.json())
       .then((data) => {
         setProduct(data);

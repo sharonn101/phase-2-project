@@ -1,10 +1,11 @@
-import React from 'react';
+ import React from 'react';
 import ProductForm from '../ProductForm';
+import './Admin.css'; 
 
 function Admin() {
   return (
-    <div>
-      <h1>Admin</h1>
+    <div className="admin-container">
+      <h1 className="admin-title">Admin</h1>
       <ProductForm />
     </div>
   );
